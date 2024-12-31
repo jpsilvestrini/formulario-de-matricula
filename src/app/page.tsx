@@ -8,7 +8,7 @@ import { SelectionField } from "@/components/selection-field";
 
 export default function Page() {
     return (
-        <div className="grid grid-cols-2 w-full">
+        <div className="flex md:grid grid-cols-2 w-full">
             <div className="flex flex-col p-[64px] gap-[48px] border border-green-500">
                 <div className="flex flex-col gap-[8px]">
                     <h1 className="font-semibold text-2xl">Formulário de matrícula</h1>
@@ -52,7 +52,7 @@ export default function Page() {
                         />
                     </div>
                     <div className="flex flex-col gap-[24px]">
-                        <div className="grid grid-cols-3 gap-[20px]">
+                        <div className="flex flex-col md:grid grid-cols-3 gap-[20px]">
                             <div className="flex flex-col col-span-2">
                                 <FormControl
                                     label="Rua"
@@ -67,7 +67,7 @@ export default function Page() {
                                 />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 gap-[20px]">
+                        <div className="flex flex-col md:grid grid-cols-3 gap-[20px]">
                             <div className="flex flex-col col-span-2">
                                 <FormControl
                                     label="Cidade"
@@ -113,14 +113,14 @@ export default function Page() {
                     <h3 className="font-semibold text-[16px]">Opções de matrícula</h3>
                     <div className="">
                         <p className="text-sm text-text-200 mb-2">Selecione o turno de estudo</p>
-                        <div className="flex gap-4">
+                        <div className="flex md:flex-row flex-col gap-4">
                             <SelectionCard label="Manhã" name="turno" value="manha" />
                             <SelectionCard label="Tarde" name="turno" value="tarde" />
                         </div>
                     </div>
                     <div className="">
                         <p className="text-sm text-text-200">Em que esporte você gostaria de inscrever seu filho?</p>
-                        <div className="grid grid-cols-2 gap-4 mt-2">
+                        <div className="flex flex-col md:grid grid-cols-2 gap-4 mt-2">
                             <SelectionCard label="Natação" name="esporte" value="natacao" />
                             <SelectionCard label="Ballet" name="esporte" value="ballet" />
                             <SelectionCard label="Judô" name="esporte" value="judo" />
@@ -134,7 +134,7 @@ export default function Page() {
                         Declaro que li e concordo com os Termos e Condições e com a Política de Privacidade da escola Estrela do Amanhã.
                     </label>
                 </div>
-                <div className="flex gap-4 justify-end items-end">
+                <div className="flex md:flex-row flex-col gap-4 justify-center items-center md:justify-end md:items-end">
                     <Button variant="secondary">Salvar respostas</Button>
                     <Button>Fazer matrícula</Button>
                 </div>
