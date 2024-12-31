@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Button } from "@/components/button";
 import { Checkbox } from "@/components/checkbox";
 import { DateField } from "@/components/date-field";
@@ -6,10 +8,13 @@ import { FormControl } from "@/components/form-control";
 import { SelectionCard } from "@/components/selection-card";
 import { SelectionField } from "@/components/selection-field";
 
+import Illustration from "../../public/illustration.png";
+import Stars from "../../public/stars.png";
+
 export default function Page() {
     return (
         <div className="flex md:grid grid-cols-2 w-full">
-            <div className="flex flex-col p-[64px] gap-[48px] border border-green-500">
+            <div className="flex flex-col p-[64px] gap-[48px]">
                 <div className="flex flex-col gap-[8px]">
                     <h1 className="font-semibold text-2xl">Formulário de matrícula</h1>
                     <p className="font-regular text-[16px]">Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
@@ -139,7 +144,32 @@ export default function Page() {
                     <Button>Fazer matrícula</Button>
                 </div>
             </div>
-            <div className="h-screen border border-red-500 bg-red-500"></div>
+            <div className="min-h-screen bg-[#FEE7D6] p-8 md:p-16 flex flex-col gap-8 md:gap-[32px]">
+                <div className="flex flex-col gap-4 md:gap-2">
+                    <div className="flex items-center gap-2 md:gap-[6px]">
+                        <Image
+                            alt="Logotipo Estrelas do Amanhã"
+                            className="w-8 h-8"
+                            src={Stars}
+                            width={32}
+                            height={32}
+                        />
+                        <h2 className="text-lg md:text-[20px] font-medium">Estrelas do Amanhã</h2>
+                    </div>
+                    <h1 className="font-semibold text-3xl md:text-[40px] leading-tight">Porque cada momento de aprendizado conta</h1>
+                    <p className="text-base md:text-[16px] text-text-200">Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+                </div>
+                <div className="flex justify-center">
+                    <Image
+                        alt="Ilustração de crianças estudando"
+                        src={Illustration}
+                        className="w-full max-w-[600px] h-auto"
+                        width={600}
+                        height={400}
+                        priority
+                    />
+                </div>
+            </div>
         </div>
     );
 }
