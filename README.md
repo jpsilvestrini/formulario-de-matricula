@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img alt="Formulário de Matrícula" src=".github/preview.png" width="100%">
+</p>
 
-## Getting Started
+<h1 align="center">Formulário de Matrícula - Escola Estrelas do Amanhã</h1>
 
-First, run the development server:
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=next&message=15.1.3&color=FF4543&labelColor=000000" alt="Next.js version" />
+  <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=FF4543&labelColor=000000" alt="License">
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<br>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Sobre o Projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este projeto é um formulário de matrícula online desenvolvido para a Escola de Educação Infantil Estrelas do Amanhã. O formulário foi criado para facilitar o processo de matrícula de novos alunos, oferecendo uma interface intuitiva e responsiva.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Tecnologias
 
-## Learn More
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔖 Layout
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+O formulário possui campos para:
+- Informações da criança
+- Endereço residencial
+- Informações do responsável
+- Opções de matrícula (turno e atividades esportivas)
 
-## Deploy on Vercel
+## 🌟 Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Design responsivo
+- Validação de campos
+- Upload de documentos
+- Seleção de turno e atividades
+- Interface amigável e intuitiva
