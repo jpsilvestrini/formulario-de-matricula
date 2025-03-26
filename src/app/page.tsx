@@ -14,7 +14,7 @@ import Stars from "../../public/stars.png";
 export default function Page() {
     return (
         <div className="flex w-full grid-cols-2 md:grid">
-            <div className="flex flex-col p-[64px] gap-[48px]">
+            <form className="flex flex-col p-[64px] gap-[48px]">
                 <div className="flex flex-col gap-[8px]">
                     <h1 className="text-2xl font-semibold">Formulário de matrícula</h1>
                     <p className="font-regular text-[16px]">Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
@@ -127,8 +127,8 @@ export default function Page() {
                     <Button variant="secondary">Salvar respostas</Button>
                     <Button>Fazer matrícula</Button>
                 </div>
-            </div>
-            <div className="min-h-screen bg-[#FEE7D6] p-8 md:p-16 flex flex-col gap-8 md:gap-[32px]">
+            </form>
+            <div className="min-h-screen bg-[#FEE7D6] p-8 md:p-16 hidden md:flex flex-col gap-8 md:gap-[32px]">
                 <div className="flex flex-col gap-4 md:gap-2">
                     <div className="flex items-center gap-2 md:gap-[6px]">
                         <Image
