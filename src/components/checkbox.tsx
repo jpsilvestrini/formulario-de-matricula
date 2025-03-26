@@ -20,7 +20,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
                         "checked:bg-brand-300 checked:border-brand-300",
                         "focus:outline-none focus:ring-2 focus:ring-brand-300/20",
                         {
-                            "border-stroke-100 hover:bg-surface-200": !error,
+                            "border-stroke-100": !error,
                             "border-brand-300": error
                         },
                         className
@@ -28,7 +28,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
                     {...props}
                 />
                 <svg
-                    className="absolute w-4 h-4 pointer-events-none text-white opacity-0 peer-checked:opacity-100"
+                    className="absolute w-4 h-4 text-white opacity-0 pointer-events-none peer-checked:opacity-100"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
